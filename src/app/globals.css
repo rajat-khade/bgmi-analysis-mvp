@@ -15,7 +15,21 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.canvas-container {
+  width: 100%;
+  max-width: 800px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden; /* Prevent overflow */
+  border: 1px solid black;
+  position: relative;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
